@@ -1,0 +1,54 @@
+.background {
+  --background: none; 
+  background-image: url('/assets/icon/background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  width: 400px;
+  position: absolute;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slogan {
+  color: white;
+  font-size: 24px;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.buttons {
+  width: 100%;
+}
+
+.btn-login {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-register {
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
