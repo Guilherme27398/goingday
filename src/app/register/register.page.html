@@ -1,11 +1,40 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Registo</ion-title>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" text="Anterior"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <p style="font-size: 20px; color: green;">
-    Estás na página de criação de conta!
-  </p>
+<ion-content class="register-content" fullscreen>
+  <div class="center-wrapper">
+    <img src="assets/icon/logo.png" alt="Going Day" class="logo" />
+
+    <h2>Criar Conta</h2>
+    <p class="subtitle">
+      Seja bem-vindo à Going DAY!<br />
+      Visto que não possui conta preencha os<br />
+      campos abaixo para começar a desfrutar<br />
+      da app
+    </p>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Nome de utilizador</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked">Palavra passe</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="btn-register">
+      Criar conta
+    </ion-button>
+  </div>
 </ion-content>
