@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="light">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home" text="Anterior"></ion-back-button>
+      <ion-back-button defaultHref="/home" text="ANTERIOR"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -33,7 +33,7 @@
       <ion-input type="password"></ion-input>
     </ion-item>
 
-    <ion-button expand="block" class="btn-register">
+    <ion-button expand="block" class="btn-register" (click)="goToLogin()">
       Criar conta
     </ion-button>
   </div>

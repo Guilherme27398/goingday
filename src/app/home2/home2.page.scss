@@ -1,0 +1,40 @@
+.home2-content {
+  --background: #f4ede4;
+  padding: 16px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logo-right {
+  height: 100px;
+  margin-left: auto;
+}
+
+.saudacao {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.secao h3 {
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+.sem-viagens {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  color: #666;
+}
+
+.btn-vermais {
+  --background: #00A651;
+  --color: white;
+  font-weight: bold;
+  margin-top: 24px;
+}

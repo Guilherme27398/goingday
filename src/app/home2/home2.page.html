@@ -1,0 +1,43 @@
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="light">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-content id="main-content" class="home2-content">
+  <div class="top-bar">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <img src="assets/icon/logo.png" alt="Logo" class="logo-right" />
+  </div>
+
+  <div class="saudacao">
+    <h2>Olá {{ username }}!</h2>
+    <p>Pronto para embarcar numa nova aventura?</p>
+  </div>
+
+  <ng-container *ngIf="temViagens; else semViagens">
+    <div class="secao">
+      <h3>Próxima viagem:</h3>
+      <!-- *ngFor aqui se necessário -->
+    </div>
+
+    <div class="secao">
+      <h3>Histórico de viagem:</h3>
+      <!-- *ngFor aqui se necessário -->
+    </div>
+  </ng-container>
+
+  <ng-template #semViagens>
+    <p class="sem-viagens">Ainda não tens viagens criadas.</p>
+  </ng-template>
+
+  <ion-button expand="block" class="btn-vermais">Ver mais</ion-button>
+</ion-content>

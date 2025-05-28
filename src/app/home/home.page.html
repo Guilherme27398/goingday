@@ -7,10 +7,11 @@
     </div>
 
     <div class="buttons">
-      <ion-button expand="block" color="success" class="btn-login" [routerLink]="['/login']">
+      <ion-button expand="block" color="success" class="btn-login" (click)="goToLogin()">
         Iniciar sessão
       </ion-button>
-      <ion-button expand="block" fill="clear" class="btn-register" [routerLink]="['/register']">
+
+      <ion-button expand="block" fill="clear" class="btn-register" (click)="goToRegister()">
         Criar conta
       </ion-button>
     </div>
