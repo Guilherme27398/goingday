@@ -1,13 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>diario</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content id="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">diario</ion-title>
+      <ion-title>Diário</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-grid class="ion-margin-top">
+    <ion-row class="ion-padding-bottom">
+      <ion-col size="6">
+        <ion-button expand="block" color="success" class="diario-button" shape="round">
+          <ion-icon name="document-text-outline" slot="top"></ion-icon>
+          <span>Lista de diários</span>
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" color="success" class="diario-button" shape="round">
+          <ion-icon name="add-circle-outline" slot="top"></ion-icon>
+          <span>Adicionar diário</span>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" color="success" class="diario-button" shape="round">
+          <ion-icon name="image-outline" slot="top"></ion-icon>
+          <span>Adicionar ponto de interesse</span>
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" color="success" class="diario-button" shape="round">
+          <ion-icon name="map-outline" slot="top"></ion-icon>
+          <span>Adicionar itinerário</span>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

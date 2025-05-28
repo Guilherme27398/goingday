@@ -18,3 +18,5 @@ import { Home2Page } from './home2.page';
   declarations: [Home2Page]
 })
 export class Home2PageModule {}
+
+
