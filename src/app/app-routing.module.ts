@@ -35,10 +35,10 @@ const routes: Routes = [
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
-
-
-
-
+  {
+    path: 'lista-diarios',
+    loadChildren: () => import('./lista-diarios/lista-diarios.module').then( m => m.ListaDiariosPageModule)
+  },
 ];
 
 @NgModule({

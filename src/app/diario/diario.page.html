@@ -8,7 +8,12 @@
   <ion-grid class="ion-margin-top">
     <ion-row class="ion-padding-bottom">
       <ion-col size="6">
-        <ion-button expand="block" color="success" class="diario-button" shape="round">
+        <ion-button
+          expand="block"
+          color="success"
+          class="diario-button"
+          shape="round"
+          (click)="goToListaDiarios()">
           <ion-icon name="document-text-outline" slot="top"></ion-icon>
           <span>Lista de diários</span>
         </ion-button>

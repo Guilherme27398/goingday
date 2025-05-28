@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de diários</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngFor="let diario of diarios">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" class="ion-text-center">
+            <div class="data-verde">
+              <p>Data partida: {{ diario.partida }}</p>
+              <p>Data chegada: {{ diario.chegada }}</p>
+            </div>
+          </ion-col>
+          <ion-col size="5" class="ion-text-center">
+            <ion-icon [name]="diario.meio" size="large"></ion-icon>
+            <p>{{ diario.origem }} → {{ diario.destino }}</p>
+            <p>Hora partida: {{ diario.horaPartida }}</p>
+            <p>Hora chegada: {{ diario.horaChegada }}</p>
+          </ion-col>
+          <ion-col size="3" class="ion-text-center">
+            <div class="dourado">
+              <p>Tipo de viagem:</p>
+              <p>{{ diario.tipo }}</p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
