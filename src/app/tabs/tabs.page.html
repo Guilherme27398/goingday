@@ -1,11 +1,5 @@
 <ion-tabs>
-<<<<<<< HEAD
-  <ion-tab-bar slot="listadiario">
-    <ion-tab-button tab="diario">
-      <ion-icon name="book-outline"></ion-icon>
-      <ion-label>Diário</ion-label>
-=======
-  <ion-router-outlet></ion-router-outlet> 
+  <ion-router-outlet></ion-router-outlet>
 
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="diario" (click)="goToPage('diario')">
@@ -16,15 +10,9 @@
     <ion-tab-button tab="home2" (click)="goToPage('home2')">
       <ion-icon name="home-outline"></ion-icon>
       <ion-label>Home</ion-label>
->>>>>>> 66917f394424da61fce4909aedaa67652ce35d3d
     </ion-tab-button>
 
-    <ion-tab-button tab="home2">
-      <ion-icon name="home-outline"></ion-icon>
-      <ion-label>Diário</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="settings">
+    <ion-tab-button tab="settings" (click)="goToPage('settings')">
       <ion-icon name="settings-outline"></ion-icon>
       <ion-label>Definições</ion-label>
     </ion-tab-button>
