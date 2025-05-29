@@ -1,12 +1,16 @@
 <ion-header>
   <ion-toolbar>
+<<<<<<< HEAD
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/tabs/home2" text="Anterior"></ion-back-button>
     </ion-buttons>
+=======
+>>>>>>> 66917f394424da61fce4909aedaa67652ce35d3d
     <ion-title>Diário</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<<<<<<< HEAD
 <ion-content class="diario-content">
   <div class="grid-opcoes">
     <ion-button class="opcao" (click)="goTo('listadiario')">
@@ -29,4 +33,42 @@
       <ion-label>Adicionar itinerário</ion-label>
     </ion-button>
   </div>
+=======
+<ion-content id="main-content">
+  <ion-grid class="ion-margin-top">
+    <ion-row class="ion-padding-bottom">
+      <ion-col size="6">
+        <ion-button
+          expand="block"
+          color="success"
+          class="diario-button"
+          shape="round"
+          (click)="goToListaDiarios()">
+          <ion-icon name="document-text-outline" slot="top"></ion-icon>
+          <span>Lista de diários</span>
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" color="success" class="diario-button" shape="round">
+          <ion-icon name="add-circle-outline" slot="top"></ion-icon>
+          <span>Adicionar diário</span>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button expand="block" color="success" class="diario-button" shape="round">
+          <ion-icon name="image-outline" slot="top"></ion-icon>
+          <span>Adicionar ponto de interesse</span>
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button expand="block" color="success" class="diario-button" shape="round">
+          <ion-icon name="map-outline" slot="top"></ion-icon>
+          <span>Adicionar itinerário</span>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+>>>>>>> 66917f394424da61fce4909aedaa67652ce35d3d
 </ion-content>

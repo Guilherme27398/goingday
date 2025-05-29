@@ -1,0 +1,22 @@
+[
+  {
+    "partida": "26/03/2025",
+    "chegada": "01/04/2025",
+    "origem": "Lisboa",
+    "destino": "Madrid",
+    "tipo": "Voo Direto",
+    "meio": "airplane",
+    "horaPartida": "12:00",
+    "horaChegada": "18:30"
+  },
+  {
+    "partida": "26/03/2025",
+    "chegada": "01/04/2025",
+    "origem": "Lisboa",
+    "destino": "Madrid",
+    "tipo": "Voo Direto",
+    "meio": "bus",
+    "horaPartida": "12:00",
+    "horaChegada": "18:30"
+  }
+]

@@ -1,6 +1,6 @@
-<ion-menu side="start" contentId="main-content">
+<ion-menu side="start" menuId="home2Menu" contentId="main-content">
   <ion-header>
-    <ion-toolbar color="light">
+    <ion-toolbar>
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
@@ -11,10 +11,15 @@
 </ion-menu>
 
 <ion-content id="main-content" class="home2-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button autoHide="false" menu="home2Menu"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
   <div class="top-bar">
-    <ion-buttons slot="start">
-      <ion-menu-button autoHide="false"></ion-menu-button>
-    </ion-buttons>
     <img src="assets/icon/logo.png" alt="Logo" class="logo-right" />
   </div>
 
@@ -26,12 +31,10 @@
   <ng-container *ngIf="temViagens; else semViagens">
     <div class="secao">
       <h3>Próxima viagem:</h3>
-      <!-- *ngFor aqui se necessário -->
     </div>
 
     <div class="secao">
       <h3>Histórico de viagem:</h3>
-      <!-- *ngFor aqui se necessário -->
     </div>
   </ng-container>
 

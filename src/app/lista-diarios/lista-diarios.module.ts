@@ -4,19 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Home2PageRoutingModule } from './home2-routing.module';
+import { ListaDiariosPageRoutingModule } from './lista-diarios-routing.module';
 
-import { Home2Page } from './home2.page';
+import { ListaDiariosPage } from './lista-diarios.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Home2PageRoutingModule
+    ListaDiariosPageRoutingModule
   ],
-  declarations: [Home2Page]
+  declarations: [ListaDiariosPage]
 })
-export class Home2PageModule {}
-
-
+export class ListaDiariosPageModule {}
