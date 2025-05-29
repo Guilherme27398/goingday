@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/diario"  text="Anterior"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lista de diários</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="listadiario-content">
+  <div *ngFor="let viagem of viagens" class="viagem-item">
+    
+
+    <div class="card-datas">
+      <div class="data-info">
+        <span class="data-label">Data partida:</span>
+        <span class="data-valor">{{ viagem.dataPartida }}</span>
+      </div>
+      <div class="data-info">
+        <span class="data-label">Data chegada:</span>
+        <span class="data-valor">{{ viagem.dataChegada }}</span>
+      </div>
+    </div>
+
+
+    <div class="card-principal">
+      <div class="transport-section">
+        <ion-icon [name]="viagem.icone" class="transport-icon"></ion-icon>
+        <span class="rota-text">{{ viagem.origem }} → {{ viagem.destino }}</span>
+      </div>
+      <div class="horarios-section">
+        <span class="horario-item">Hora voo partida - {{ viagem.embarque }}</span>
+        <span class="horario-item">Hora voo chegada - {{ viagem.chegada }}</span>
+      </div>
+    </div>
+
+   
+    <div class="card-tipo">
+      <span class="tipo-label">Tipo de viagem:</span>
+      <span class="tipo-valor">{{ viagem.tipo }}</span>
+    </div>
+
+  </div>
+</ion-content>

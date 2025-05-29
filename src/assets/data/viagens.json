@@ -1,0 +1,22 @@
+[
+  {
+    "dataPartida": "24/03/2025",
+    "dataChegada": "01/04/2025",
+    "origem": "Lisboa",
+    "destino": "Madrid",
+    "embarque": "12:00",
+    "chegada": "15:30",
+    "tipo": "Voo Direto",
+    "icone": "airplane-outline"
+  },
+  {
+    "dataPartida": "26/03/2025",
+    "dataChegada": "02/04/2025",
+    "origem": "Lisboa",
+    "destino": "Madrid",
+    "embarque": "11:00",
+    "chegada": "14:00",
+    "tipo": "Autocarro",
+    "icone": "bus-outline"
+  }
+]

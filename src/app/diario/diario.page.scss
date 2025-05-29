@@ -1,0 +1,50 @@
+.diario-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.grid-opcoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+ion-toolbar {
+  --background: #E6C177;
+  --color: #ffffff; 
+  min-height: 80px;
+  padding-top: 12px; 
+  display: flex;
+  align-items: center; 
+}
+
+ion-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+ion-back-button {
+  color: white;
+}
+
+/* Botões da grid */
+.opcao {
+  flex-direction: column;
+  height: 120px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  --background: #00A651;
+  --color: white;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 6px;
+}
+
+.opcao ion-icon {
+  font-size: 36px;
+}

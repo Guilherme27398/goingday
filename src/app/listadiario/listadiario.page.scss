@@ -1,0 +1,138 @@
+ion-toolbar {
+  --background: #E6C177;
+  --color: white;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+}
+
+ion-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ion-back-button {
+  color: white;
+}
+
+.listadiario-content {
+  --background: #f4ede4;
+  padding: 16px;
+  padding-top: 40px; 
+}
+
+.viagem-item {
+  display: flex;
+  gap: 0;
+  margin-bottom: 16px;
+  height: 80px; /* Altura fixa para todos os cards */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Card Verde - Esquerda */
+.card-datas {
+  background-color: #00a651;
+  color: white;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  border-radius: 12px 0 0 12px;
+}
+
+.data-info {
+  margin-bottom: 4px;
+}
+
+.data-info:last-child {
+  margin-bottom: 0;
+}
+
+.data-label {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.data-valor {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+/* Card Principal - Centro */
+.card-principal {
+  background-color: white;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.transport-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.transport-icon {
+  font-size: 20px;
+  color: #333;
+}
+
+.rota-text {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.horarios-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.horario-item {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.2;
+}
+
+/* Card Amarelo - Direita */
+.card-tipo {
+  background-color: #e6c177;
+  color: white;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  border-radius: 0 12px 12px 0;
+}
+
+.tipo-label {
+  font-size: 10px;
+  font-weight: normal;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.tipo-valor {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.viagem-item:first-of-type {
+  margin-top: 30px;
+}

@@ -16,6 +16,14 @@ const routes: Routes = [
         loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule)
       },
       {
+        path: 'diario',
+        loadChildren: () => import('../diario/diario.module').then(m => m.DiarioPageModule)
+      },
+      {
+        path: 'listadiario',
+        loadChildren: () => import('../listadiario/listadiario.module').then(m => m.ListadiarioPageModule)
+      },
+      {
         path: '',
         redirectTo: 'home2',
         pathMatch: 'full'
@@ -23,6 +31,7 @@ const routes: Routes = [
     ]
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
